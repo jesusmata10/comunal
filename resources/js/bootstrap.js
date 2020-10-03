@@ -8,11 +8,12 @@ try {
     window.Popper = require('popper.js').default;
     window.$ = window.jQuery = require('jquery');
     require('bootstrap');
-    require('admin-lte');
     require('datatables.net');
     require('datatables.net/js/jquery.dataTables.js');
     require('datatables.net-responsive-bs4/js/responsive.bootstrap4.js');
     require('datatables.net-bs4/js/dataTables.bootstrap4.js');
+    require('admin-lte');
+    require('daterangepicker');
 } catch (e) {}
 /**
  * We'll load the axios HTTP library which allows us to easily issue requests

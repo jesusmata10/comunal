@@ -15,13 +15,13 @@ class CreatePersonasTable extends Migration
     {
         Schema::create('personas', function (Blueprint $table) {
             $table->bigIncrements('id');
-            $table->varchar('nombres', 100)->nullable()->comment('nombres persona');
-            $table->varchar('apellidos', 100)->nullable()->comment('apellidos de la persona');
+            $table->string('nombres', 100)->nullable()->comment('nombres persona');
+            $table->string('apellidos', 100)->nullable()->comment('apellidos de la persona');
             $table->string('cedula', 25)->nullable()->comment('numero de cedula o pasaporte');
-            $table->date('fechanac')-nullable()->comment('fecha de nacimiento');
-            $table->varchar('nacionalidad',50)->nullable()->comment('nacionalidad');
+            $table->date('fechanac')->nullable()->comment('fecha de nacimiento');
+            $table->string('nacionalidad',50)->nullable()->comment('nacionalidad');
             $table->char('genero', 10)->nullable()->comment('genero');
-            $table->email('email', 100)->nullable()->comment('correo');
+            $table->string('email', 100)->nullable()->comment('correo');
             $table->string('status', 50)->nullable()->comment('status');
             $table->timestamps();
             

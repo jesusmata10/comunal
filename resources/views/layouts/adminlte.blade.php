@@ -110,6 +110,36 @@
                                         </a>
                                     </li>
                                 </ul>
+                            </li><li class="nav-item has-treeview">
+                                <a class="nav-link active" href="">
+                                    <i class="nav-icon fas fa-tachometer-alt">
+                                    </i>
+                                    <p>
+                                        PDVSA-GAS
+                                        <i class="right fas fa-angle-left">
+                                        </i>
+                                    </p>
+                                </a>
+                                <ul class="nav nav-treeview">
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="{{ route('home') }}">
+                                            <i class="far fa-circle nav-icon">
+                                            </i>
+                                            <p>
+                                                Pagina Activa
+                                            </p>
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="{{ route('registroper.index') }}">
+                                            <i class="far fa-circle nav-icon">
+                                            </i>
+                                            <p>
+                                                Pagina Inactiva
+                                            </p>
+                                        </a>
+                                    </li>
+                                </ul>
                             </li>
                             <li class="nav-item has-treeview">
                                 <a class="nav-link active" href="#">

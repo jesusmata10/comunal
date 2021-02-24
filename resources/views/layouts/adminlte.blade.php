@@ -85,9 +85,10 @@
                                     <i class="nav-icon fas fa-tachometer-alt">
                                     </i>
                                     <p>
-                                        Consejo Comunal
                                         <i class="right fas fa-angle-left">
                                         </i>
+                                        Consejo Comunal
+                                        
                                     </p>
                                 </a>
                                 <ul class="nav nav-treeview">
@@ -97,6 +98,9 @@
                                             </i>
                                             <p>
                                                 Pagina Activa
+                                                <span class="right badge badge-danger">
+                                                    Offline
+                                                </span>
                                             </p>
                                         </a>
                                     </li>
@@ -106,6 +110,9 @@
                                             </i>
                                             <p>
                                                 Pagina Inactiva
+                                                <span class="right badge badge-danger">
+                                                    Offline
+                                                </span>
                                             </p>
                                         </a>
                                     </li>
@@ -127,6 +134,9 @@
                                             </i>
                                             <p>
                                                 Pagina Activa
+                                                <span class="right badge badge-danger">
+                                                    Offline
+                                                </span>
                                             </p>
                                         </a>
                                     </li>
@@ -136,7 +146,11 @@
                                             </i>
                                             <p>
                                                 Pagina Inactiva
+                                                <span class="right badge badge-danger">
+                                                    Offline
+                                                </span>
                                             </p>
+
                                         </a>
                                     </li>
                                 </ul>
@@ -149,6 +163,7 @@
                                         Consultas
                                         <i class="right fas fa-angle-left">
                                         </i>
+
                                     </p>
                                 </a>
                                 <ul class="nav nav-treeview">
@@ -158,6 +173,9 @@
                                             </i>
                                             <p>
                                                 Pagina Activa
+                                                <span class="right badge badge-danger">
+                                                    Offline
+                                                </span>
                                             </p>
                                         </a>
                                     </li>
@@ -167,6 +185,9 @@
                                             </i>
                                             <p>
                                                 Pagina Inactiva
+                                                <span class="right badge badge-danger">
+                                                    Offline
+                                                </span>
                                             </p>
                                         </a>
                                     </li>
@@ -179,7 +200,7 @@
                                     <p>
                                         Enlaces simple
                                         <span class="right badge badge-danger">
-                                            Nuevo
+                                            Offline
                                         </span>
                                     </p>
                                 </a>
@@ -200,7 +221,7 @@
                                             <i class="far fa-user nav-icon">
                                             </i>
                                             <p>
-                                                User
+                                                Usuarios
                                             </p>
                                         </a>
                                     </li>
@@ -221,6 +242,9 @@
                                     </i>
                                     <p>
                                         Pruebas
+                                        <span class="right badge badge-danger">
+                                            Offline
+                                        </span>
                                     </p>
                                 </a>
                             </li>

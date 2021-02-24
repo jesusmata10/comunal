@@ -26,7 +26,7 @@ class ListuserController extends Controller
      */
     public function create()
     {
-        //
+        
     }
 
     /**

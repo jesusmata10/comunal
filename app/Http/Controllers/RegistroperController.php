@@ -13,7 +13,7 @@ class RegistroperController extends Controller
      */
     public function index()
     {
-        return view('register.registroper');
+        return view('register.create');
     }
 
     /**

@@ -129,7 +129,7 @@
                                 </a>
                                 <ul class="nav nav-treeview">
                                     <li class="nav-item">
-                                        <a class="nav-link" href="{{ route('home') }}">
+                                        <a class="nav-link" href="{{ route('registroper.index') }}">
                                             <i class="far fa-circle nav-icon">
                                             </i>
                                             <p>
@@ -347,7 +347,7 @@
             } );
         </script>
 
-        <script type="text/javascript">
+    <script type="text/javascript">
     $(function () {
     //Initialize Select2 Elements
     $('.select2').select2()

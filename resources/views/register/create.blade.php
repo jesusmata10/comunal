@@ -14,25 +14,25 @@
                 <div class="row">
                     <div class="form-group col-md-6">
                         <label for="name">
-                            Nombres:
+                            bombonas:
                         </label>
-                        <input class="form-control" id="name" name="name" placeholder="Nombre" type="text">
+                        <input class="form-control" id="name" name="name" placeholder="bombona" type="text">
                         </input>
                     </div>
                     <div class="form-group col-md-6">
-                        <label for="apellido">
-                            Apellidos:
+                        <label for="kilo">
+                            kilos:
                         </label>
-                        <input class="form-control" id="apellido" name="apellido" placeholder="Apellidos" type="text">
+                        <input class="form-control" id="kilo" name="kilo" placeholder="kilos" type="text">
                         </input>
                     </div>
                 </div>
                 <div class="row">
                     <div class="form-group col-md-4">
-                        <label for="cedula">
-                            Cedula:
+                        <label for="cantidad">
+                            cantidad:
                         </label>
-                        <input class="form-control" id="cedula" name="cedula" placeholder="cedula" type="text">
+                        <input class="form-control" id="cantidad" name="cantidad" placeholder="cantidad" type="text">
                         </input>
                     </div>
                     <div class="form-group col-md-4">
@@ -67,17 +67,17 @@
                         </select>
                     </div>
                     <div class="form-group col-md-4">
-                        <label for="apellido">
+                        <label for="kilo">
                             Email:
                         </label>
-                        <input class="form-control" id="apellido" name="apellido" placeholder="Apellidos" type="text">
+                        <input class="form-control" id="kilo" name="kilo" placeholder="kilos" type="text">
                         </input>
                     </div>
                     <div class="form-group col-md-4">
-                        <label for="apellido">
+                        <label for="kilo">
                             Status:
                         </label>
-                        <input class="form-control" id="apellido" name="apellido" placeholder="Apellidos" type="text">
+                        <input class="form-control" id="kilo" name="kilo" placeholder="kilos" type="text">
                         </input>
                     </div>
                 </div>
@@ -134,98 +134,143 @@
             </div>
         </form> 
     </div> -->
-    <div class="card-body">
-        <form role="form">
-            <div class="form-group">
-                <div class="row">
-                    <div class="form-group">
-                        <label class="form-label">
-                            Entre su Nombre:
-                        </label>
-                        <input class="form-control" id="nombre" placeholder="Nombre..." type="text">
-                        </input>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="form-group">
-                        <label>
-                            Entre su Apellido:
-                        </label>
-                        <input class="form-control" id="apellido" placeholder="Apellido..." type="text">
-                        </input>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="form-group">
-                        <label>
-                            Entre su Cédula:
-                        </label>
-                        <input class="form-control" id="cedula" placeholder="Cedúla" type="text">
-                        </input>
-                    </div>
-                </div>
-                <div>
-                    <button class="btn btn-success" id="adicionar" type="button">
-                        Agregar
-                    </button>
-                </div>
-            </div>
-            <div id="adicionados">
-                Elementos en la Tabla:
-            </div>
-            <table class="table table-striped table-bordered nowrap" id="mytable">
-                <tr>
-                    <th>
-                        Nombre
-                    </th>
-                    <th>
-                        Apellidos
-                    </th>
-                    <th>
-                        Cédula
-                    </th>
-                    <th>
-                        Eliminar
-                    </th>
-                </tr>
-            </table>
-        </form>
-    </div>
+<<<<<<< HEAD
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<div class="container-fluid">
+  <form class="for">
+   <div class="form-group">
+    <p>
+      <label>Bombona:</label> <br>
+      <input id="bombona" class="form-control" type="text" placeholder="bombona..."><br>
+    </p>
+    <p>
+      <label>Kilo:</label> <br>
+      <input id="kilo" class="form-control" type="text" placeholder="kilo..."><br>
+    </p>
+    <p>
+      <label>Cantidad:</label> <br>
+      <input id="cantidad" class="form-control" type="text" placeholder="Cedúla"> <br>
+    </p>
+    <button id="adicionar" class="btn btn-success" type="button">Agregar</button>
+  </div>
+</form>
+
+<p>Elementos en la Tabla:
+  <div id="adicionados"></div>
+</p>
+<table  id="mytable" class="table table-bordered table-hover ">
+  <tr>
+    <th>Bombona</th>
+    <th>Kilo</th>
+    <th>Cantidad</th>
+    <th>Acción</th>
+
+  </tr>
+</tabl
+=======
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<div class="container-fluid">
+  <form class="for">
+   <div class="form-group">
+    <p>
+      <label>Bombona:</label> <br>
+      <input id="bombona" class="form-control" type="text" placeholder="bombona..."><br>
+    </p>
+    <p>
+      <label>Kilo:</label> <br>
+      <input id="kilo" class="form-control" type="text" placeholder="kilo..."><br>
+    </p>
+    <p>
+      <label>Cantidad:</label> <br>
+      <input id="cantidad" class="form-control" type="text" placeholder="Cedúla"> <br>
+    </p>
+    <button id="adicionar" class="btn btn-success" type="button">Agregar</button>
+  </div>
+</form>
+
+<p>Elementos en la Tabla:
+  <div id="adicionados"></div>
+</p>
+<table  id="mytable" class="table table-bordered table-hover ">
+  <tr>
+    <th>Bombona</th>
+    <th>Kilo</th>
+    <th>Cantidad</th>
+    <th>Acción</th>
+
+  </tr>
+</table>
+
+>>>>>>> 4360caa97815b4a5cfcc57416272ed09a7f9774b
 </div>
 <script>
     $(document).ready(function() {
         //obtenemos el valor de los input
 
+<<<<<<< HEAD
         $('#adicionar').click(function() {
-          var nombre = document.getElementById("nombre").value;
-          var apellido = document.getElementById("apellido").value;
-          var cedula = document.getElementById("cedula").value;
+          var bombona = document.getElementById("bombona").value;
+          var kilo = document.getElementById("kilo").value;
+          var cantidad = document.getElementById("cantidad").value;
           var i = 1; //contador para asignar id al boton que borrara la fila
-          var fila = '<tr id="row' + i + '"><td>' + nombre + '</td><td>' + apellido + '</td><td>' + cedula + '</td><td><button type="button" name="remove" id="' + i + '" class="btn btn-danger btn_remove">Quitar</button></td></tr>'; //esto seria lo que contendria la fila
-            console.log(nombre+apellido+cedula);
+          var fila = '<tr id="row' + i + '"><td>' + bombona + '</td><td>' + kilo + '</td><td>' + cantidad + '</td><td><button type="button" name="remove" id="' + i + '" class="btn btn-danger btn_remove">Quitar</button></td></tr>';
           i++;
+=======
+$('#adicionar').click(function() {
+  var bombona = document.getElementById("bombona").value;
+  var kilo = document.getElementById("kilo").value;
+  var cantidad = document.getElementById("cantidad").value;
+  var i = 1; //contador para asignar id al boton que borrara la fila
+  var fila = '<tr id="row' + i + '"><td>' + bombona + '</td><td>' + kilo + '</td><td>' + cantidad + '</td><td><button type="button" name="remove" id="' + i + '" class="btn btn-danger btn_remove">Quitar</button></td></tr>'; //esto seria lo que contendria la fila
+>>>>>>> 4360caa97815b4a5cfcc57416272ed09a7f9774b
 
           $('#mytable tr:first').after(fila);
             $("#adicionados").text(""); //esta instruccion limpia el div adicioandos para que no se vayan acumulando
             var nFilas = $("#mytable tr").length;
             $("#adicionados").append(nFilas - 1);
             //le resto 1 para no contar la fila del header
-            document.getElementById("apellido").value ="";
-            document.getElementById("cedula").value = "";
-            document.getElementById("nombre").value = "";
-            document.getElementById("nombre").focus();
+            document.getElementById("kilo").value ="";
+            document.getElementById("cantidad").value = "";
+            document.getElementById("bombona").value = "";
+            document.getElementById("bombona").focus();
           });
         $(document).on('click', '.btn_remove', function() {
           var button_id = $(this).attr("id");
             //cuando da click obtenemos el id del boton
-              $('#row' + button_id + '').remove(); //borra la fila
+            $('#row' + button_id + '').remove(); //borra la fila
             //limpia el para que vuelva a contar las filas de la tabla
             $("#adicionados").text("");
             var nFilas = $("#mytable tr").length;
             $("#adicionados").append(nFilas - 1);
           });
+        });
 
+<<<<<<< HEAD
     });
+=======
+  $('#mytable tr:first').after(fila);
+    $("#adicionados").text(""); //esta instruccion limpia el div adicioandos para que no se vayan acumulando
+    var nFilas = $("#mytable tr").length;
+    $("#adicionados").append(nFilas - 1);
+    //le resto 1 para no contar la fila del header
+    document.getElementById("kilo").value ="";
+    document.getElementById("cantidad").value = "";
+    document.getElementById("bombona").value = "";
+    document.getElementById("bombona").focus();
+  });
+$(document).on('click', '.btn_remove', function() {
+  var button_id = $(this).attr("id");
+    //cuando da click obtenemos el id del boton
+    $('#row' + button_id + '').remove(); //borra la fila
+    //limpia el para que vuelva a contar las filas de la tabla
+    $("#adicionados").text("");
+    var nFilas = $("#mytable tr").length;
+    $("#adicionados").append(nFilas - 1);
+  });
+});
+>>>>>>> 4360caa97815b4a5cfcc57416272ed09a7f9774b
 </script>
 <!--</div>
 <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" />
@@ -234,16 +279,16 @@
   <form>
    <div class="form-group">
     <p>
-      <label>Entre su Nombre:</label> <br>
-      <input id="nombre" class="form-control" type="text" placeholder="Nombre..."><br>
+      <label>Entre su bombona:</label> <br>
+      <input id="bombona" class="form-control" type="text" placeholder="bombona..."><br>
     </p>
     <p>
-      <label>Entre su Apellido:</label> <br>
-      <input id="apellido" class="form-control" type="text" placeholder="Apellido..."><br>
+      <label>Entre su kilo:</label> <br>
+      <input id="kilo" class="form-control" type="text" placeholder="kilo..."><br>
     </p>
     <p>
       <label>Entre su C&eacute;dula:</label> <br>
-      <input id="cedula" class="form-control" type="text" placeholder="Cedúla"> <br>
+      <input id="cantidad" class="form-control" type="text" placeholder="Cedúla"> <br>
     </p>
     <button id="adicionar" class="btn btn-success" type="button">Adicionar a la tabla</button>
   </div>
@@ -255,7 +300,7 @@
 <table  id="mytable" class="table table-bordered table-hover ">
   <tr>
     <th>Nobmre</th>
-    <th>Apellidos</th>
+    <th>kilos</th>
     <th>C&eacute;dula</th>
     <th>Eliminar</th>
 

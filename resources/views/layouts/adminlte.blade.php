@@ -88,7 +88,6 @@
                                         <i class="right fas fa-angle-left">
                                         </i>
                                         Consejo Comunal
-                                        
                                     </p>
                                 </a>
                                 <ul class="nav nav-treeview">
@@ -105,7 +104,7 @@
                                         </a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link" href="{{ route('registroper.index') }}">
+                                        <a class="nav-link" href="{{ url('/register/create') }}">
                                             <i class="far fa-circle nav-icon">
                                             </i>
                                             <p>
@@ -117,7 +116,8 @@
                                         </a>
                                     </li>
                                 </ul>
-                            </li><li class="nav-item has-treeview">
+                            </li>
+                            <li class="nav-item has-treeview">
                                 <a class="nav-link active" href="">
                                     <i class="nav-icon fas fa-tachometer-alt">
                                     </i>
@@ -150,7 +150,6 @@
                                                     Offline
                                                 </span>
                                             </p>
-
                                         </a>
                                     </li>
                                 </ul>
@@ -163,7 +162,6 @@
                                         Consultas
                                         <i class="right fas fa-angle-left">
                                         </i>
-
                                     </p>
                                 </a>
                                 <ul class="nav nav-treeview">
@@ -261,7 +259,8 @@
                 <!-- Contenido principal -->
                 <div class="content">
                     <br>
-                    @yield('content')
+                        @yield('content')
+                    </br>
                 </div>
             </div>
             <!-- /.content-wrapper -->
@@ -297,6 +296,7 @@
         </div>
         <script src="{{ asset('js/app.js') }}">
         </script>
+        <script src="/plugins/jquery/jquery.min.js"></script>
         <script type="text/javascript">
             $(document).ready(function() {
                 $('#example').DataTable( {
@@ -346,9 +346,8 @@
                 } );
             } );
         </script>
-
-    <script type="text/javascript">
-    $(function () {
+        <script type="text/javascript">
+            $(function () {
     //Initialize Select2 Elements
     $('.select2').select2()
 
@@ -475,6 +474,6 @@
   document.querySelector("#actions .cancel").onclick = function() {
     myDropzone.removeAllFiles(true);
   };
-</script>
+        </script>
     </body>
 </html>

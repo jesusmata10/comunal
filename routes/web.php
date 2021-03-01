@@ -23,4 +23,10 @@ Route::get('/home', 'HomeController@index')->name('home');
 
 Route::resource('/usuario/listUser','ListuserController');
 
-Route::resource('/register/create', 'RegistroperController');
+Route::resource('/register/pdvsa','RegistroperController')->middleware('web');
+
+Route::group(['middleware' => ['web']], function (){
+
+
+
+});

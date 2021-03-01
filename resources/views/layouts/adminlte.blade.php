@@ -104,7 +104,7 @@
                                         </a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link" href="{{ url('/register/create') }}">
+                                        <a class="nav-link" href="#">
                                             <i class="far fa-circle nav-icon">
                                             </i>
                                             <p>
@@ -129,7 +129,7 @@
                                 </a>
                                 <ul class="nav nav-treeview">
                                     <li class="nav-item">
-                                        <a class="nav-link" href="{{ route('registroper.index') }}">
+                                        <a class="nav-link" href="{{ url('/register/pdvsa') }}">
                                             <i class="far fa-circle nav-icon">
                                             </i>
                                             <p>
@@ -141,7 +141,7 @@
                                         </a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link" href="{{ route('registroper.index') }}">
+                                        <a class="nav-link" href="#">
                                             <i class="far fa-circle nav-icon">
                                             </i>
                                             <p>
@@ -286,14 +286,48 @@
                 <!-- Default to the left -->
                 <strong>
                     Copyright © 2014-2019
-                    <a href="https://adminlte.io">
+                    <a href="https://adminlte.io/themes/v3/pages/UI/modals.html" target="_blank">
                         AdminLTE.io
                     </a>
                     .
                 </strong>
                 All rights reserved.
             </footer>
+
+            <!--<button type="button" class="btn btn-info" data-toggle="modal" data-target="#modal-default">Buscar</button>
+
+            <div class="modal fade" id="modal-default" style="display: none;" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h4 class="modal-title">Buscar:</h4>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">×</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <form role="form">
+                                <div class="form-group">
+                                  <label>Cedula:</label>
+                                  <input id="kilo" class="form-control" type="text">
+                                </div>
+                            
+                        </div>
+                        <div class="modal-footer justify-content-between">
+                          <button type="button" class="btn btn-light" data-dismiss="modal">Cerrar</button>
+                          <button type="submit" class="btn btn-primary">Buscar</button>
+                        </div>
+                        </form>
+                    </div>
+                   
+                </div>
+                    
+            </div>-->
         </div>
+
+         @include('layouts.parciales.script')
+
+         @yield('script')
         <script src="{{ asset('js/app.js') }}">
         </script>
         <script src="/plugins/jquery/jquery.min.js"></script>

@@ -2,7 +2,7 @@
 
 @section('content')
 <!--<div class="row">-->
-
+<p>Index</p>
     <div class="card card-primary">
         <div class="card-header">
             <h3 class="card-title">Registro de Bombonas</h3>
@@ -36,9 +36,13 @@
                       <label for="bombona">Bombona:</label>
                       <input id="bombona" class="form-control" type="text" placeholder="bombona" required="requerido">
                     </div>
-                    <div class="form-group col-md-4">
-                      <label for="kilo">Kilo:</label>
-                      <input id="kilo" class="form-control" type="text" placeholder="kilo">
+                    <div class="form-group col-4">
+                      <label for="">Kilo:</label>
+                      <select class="form-control" name="estatus" id="estatus">
+                          <option value="" selected>Seleccione una opci&oacute;n</option>
+                          <option value="0">10 Kg</option>
+                          <option value="1">18 Kg</option>
+                      </select>
                     </div>
                     <div class="form-group col-md-4">
                       <label>Cantidad:</label>

@@ -32,13 +32,25 @@
                 </div>
                 <hr>
                 <div class="row">
-                    <div class="form-group col-md-4">
-                      <label for="bombona">Bombona:</label>
-                      <input id="bombona" class="form-control" type="text" placeholder="bombona" required="requerido">
+                    <div class="form-group col-4">
+                      <label for="">Bombona:</label>
+                      <select class="form-control" name="bombona" id="bombona">
+                          <option value="" selected>Seleccione una opci&oacute;n</option>
+                          <option value="Autogas">Autogas</option>
+                          <option value="Hermagas">Hermagas</option>
+                          <option value="Danielgas">Danielgas</option>
+                          <option value="Pdvsagas">Pdvsagas</option>
+                          <option value="Digas">Digas</option>
+                      </select>
                     </div>
-                    <div class="form-group col-md-4">
-                      <label for="kilo">Kilo:</label>
-                      <input id="kilo" class="form-control" type="text" placeholder="kilo">
+                    <div class="form-group col-4">
+                      <label for="">Kilo:</label>
+                      <select class="form-control" name="kilo" id="kilo">
+                          <option value="" selected>Seleccione una opci&oacute;n</option>
+                          <option value="10 Kg">10 Kg</option>
+                          <option value="18 Kg">18 Kg</option>
+                          <option value="43 Kg">43 Kg</option>
+                      </select>
                     </div>
                     <div class="form-group col-md-4">
                       <label>Cantidad:</label>
@@ -53,7 +65,8 @@
                       <div id="adicionados"></div>
                     </p>
                     <table  id="mytable" class="table table-bordered table-hover ">
-                      <tr>
+                      <tr class="text-center">
+                        
                         <th>Bombona</th>
                         <th>Kilo</th>
                         <th>Cantidad</th>

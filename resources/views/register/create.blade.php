@@ -1,6 +1,60 @@
 @extends('layouts.adminlte')
 
 @section('content')
+
+<!-- parametro buscar -->
+    <div class="card card-primary collapsed-card">
+          <div class="card-header">
+            <h3 class="card-title">Parametros de Busqueda</h3>
+
+            <div class="card-tools">
+              <button type="button" class="btn btn-tool" data-card-widget="collapse">
+                <i class="fas fa-minus"></i>
+              </button>
+              <button type="button" class="btn btn-tool" data-card-widget="remove">
+                <i class="fas fa-times"></i>
+              </button>
+            </div>
+          </div>
+          <!-- /.card-header -->
+        
+            <div class="card-body" style="display: block;">
+                <form role="form">
+                    <div class="row">
+                        <div class="form-group col-md-6">
+                          <label for="name"> Nombre y Apellido:</label>
+                          <input id="name" class="form-control" type="text">
+                        </div>
+                        <div class="form-group col-md-6">
+                          <label for="cedula">Cedula:</label>
+                          <input id="cedula" class="form-control" type="text">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="form-group col-md-6">
+                          <label for="direccion">Direccion:</label>
+                          <input id="direccion" class="form-control" type="text">
+                        </div>
+                        <div class="form-group col-md-6">
+                          <label for="codigo">Codigo:</label>
+                          <input id="codigo" class="form-control" type="text">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                    <button id="adicionar" class="btn btn-success" type="button">Buscar</button>
+                </div>
+                </form>
+                <!-- /.row -->
+            </div>
+        
+          <!-- /.card-body 
+          <div class="card-footer" style="display: block;">
+            
+            Visit <a href="https://select2.github.io/">Select2 documentation</a> for more examples and information about
+            the plugin.
+          </div> -->
+    </div>
+
 <!--<div class="row">-->
 
     <div class="card card-primary">
@@ -84,6 +138,9 @@
     
 @section('script')
 <script>
+    $('.select2bs4').select({
+        theme: 'bootstrap4'
+    });
 
     $(document).ready(function() {
         //obtenemos el valor de los input

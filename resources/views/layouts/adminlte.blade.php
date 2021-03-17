@@ -134,7 +134,7 @@
                                             </i>
                                             <p>
                                                 Pagina Activa
-                                                <span class="right badge badge-danger">
+                                                <span class="right badge badge-success">
                                                     Offline
                                                 </span>
                                             </p>

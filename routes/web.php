@@ -27,6 +27,7 @@ Route::resource('/register/pdvsa','RegistroperController')->middleware('web');
 
 Route::group(['middleware' => ['web']], function (){
 
+Route::resource('/bombonas', 'BombonaController');
 
 
 });

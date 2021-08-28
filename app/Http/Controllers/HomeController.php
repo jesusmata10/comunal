@@ -23,6 +23,13 @@ class HomeController extends Controller
      */
     public function index()
     {
-        return view('home');
+         $breadcrumbs = [
+            [
+                'link' => '/home',
+                'name' => 'Home',
+            ],
+            
+        ];
+        return view('home', compact('breadcrumbs'));
     }
 }

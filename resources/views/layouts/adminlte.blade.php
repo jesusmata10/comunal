@@ -79,6 +79,9 @@
                     </div>
                     <!-- Sidebar Menu -->
                     <nav class="mt-2">
+                        <div class="col-md-8">
+                            @yield('breadcrumbs')
+                        </div>
                         <ul class="nav nav-pills nav-sidebar flex-column" data-accordion="false" data-widget="treeview" role="menu">
                             <li class="nav-item has-treeview">
                                 <a class="nav-link active" href="">
@@ -96,7 +99,7 @@
                                             <i class="far fa-circle nav-icon">
                                             </i>
                                             <p>
-                                                Pagina Activa
+                                                Jefe de Hogar
                                                 <span class="right badge badge-danger">
                                                     Offline
                                                 </span>

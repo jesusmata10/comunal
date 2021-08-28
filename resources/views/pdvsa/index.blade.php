@@ -1,8 +1,6 @@
 @extends('layouts.adminlte')
 
 @section('content')
-<!--<div class="row">-->
-<p>Index</p>
     <div class="card card-primary">
         <div class="card-header">
             <h3 class="card-title">Registro de Bombonas</h3>
@@ -42,6 +40,7 @@
                           <option value="" selected>Seleccione una opci&oacute;n</option>
                           <option value="0">10 Kg</option>
                           <option value="1">18 Kg</option>
+                          <option value="2">24 Kg</option>
                       </select>
                     </div>
                     <div class="form-group col-md-4">
@@ -72,8 +71,11 @@
             </div>
         </form>
     </div>
-    
-@section('script')
+<script
+  src="https://code.jquery.com/jquery-3.6.0.min.js"
+  integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+  crossorigin="anonymous">
+</script>
 <script>
 
     $(document).ready(function() {
@@ -107,6 +109,5 @@
           });
         });
 </script>
-@endsection
 
 @endsection

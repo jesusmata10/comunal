@@ -14,7 +14,7 @@ class BombonaController extends Controller
      */
     public function index()
     {
-        //
+        return view('pdvsa.index');
     }
 
     /**
